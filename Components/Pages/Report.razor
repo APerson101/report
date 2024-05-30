@@ -1,0 +1,54 @@
+@page "/report"
+@inject ModalService _modalService
+
+
+<Form Model="@model" LabelColSpan="8" WrapperColSpan="16">
+  <FormItem Label="Name">
+    <Input Placeholder="Enter your name" @bind-Value="@context.reporterName" />
+  </FormItem>
+  <FormItem Label="Address">
+    <Input Placeholder="Enter your Address" @bind-Value="@context.reporterAddress" />
+  </FormItem>
+  <FormItem Label="Number">
+    <Input Placeholder="Enter your Number" @bind-Value="@context.reporterNumber" />
+  </FormItem>
+  <FormItem Label="Report">
+    <Input Placeholder="Enter report Text" @bind-Value="@context.reportText" />
+  </FormItem>
+  <Upload Action="https://www.mocky.io/v2/5cc8019d300000980a055e76" Name="files" Drag Multiple
+    OnSingleCompleted="OnSingleCompleted">
+    Select Attachments
+  </Upload>
+  <Button OnClick="submit">Submit </Button>
+  <Modal Title="@("Modal")" @bind-Visible="@_visible" OkText="@("Agree")" CancelText="@("Dismiss")">
+    <p>Send Update</p>
+  </Modal>
+
+</Form>
+
+@code {
+  private ReportModel model = new();
+  private bool _visible = false;
+  public record ReportModel
+  {
+    public string imageLink { get; set; }
+    public string reporterName { get; set; }
+    public string reporterNumber { get; set; }
+    public string reporterAddress { get; set; }
+    public string reportText { get; set; }
+  }
+
+  void OnSingleCompleted(UploadInfo fileinfo)
+  {
+    if (fileinfo.File.State == UploadState.Success)
+    {
+
+    }
+  }
+
+  private void submit()
+  {
+    _visible = true;
+  }
+
+}

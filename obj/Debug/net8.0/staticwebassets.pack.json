@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/abdulhadihashim/Desktop/report/obj/Debug/net8.0/scopedcss/projectbundle/report.bundle.scp.css",
+      "PackagePath": "staticwebassets/report.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/abdulhadihashim/Desktop/report/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/abdulhadihashim/Desktop/report/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/abdulhadihashim/Desktop/report/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/abdulhadihashim/Desktop/report/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.report.props",
+      "PackagePath": "build\\report.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.report.props",
+      "PackagePath": "buildMultiTargeting\\report.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.report.props",
+      "PackagePath": "buildTransitive\\report.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.report.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,21 @@
+@page "/"
+@inject NavigationManager NavManager
+
+<Card Style="width: 40%; height: 80%; margin: 0 auto; margin-top: 40px;">
+  <Flex Vertical Gap="large" Align="space-evenly">
+    <h1>Login</h1>
+    <Input Placeholder="Enter email" @bind-Value="email" />
+    <Input Placeholder="Enter password" @bind-Value="password" />
+    <Button OnClick="Authenticate" Type="@ButtonType.Primary">Login</Button>
+  </Flex>
+</Card>
+
+@code {
+  private string email;
+  private string password;
+
+  private void Authenticate()
+  {
+    NavManager.NavigateTo("/home");
+  }
+}

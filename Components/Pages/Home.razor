@@ -1,0 +1,17 @@
+﻿@page "/home"
+
+@inject NavigationManager NavigationManager
+
+<PageTitle>Home</PageTitle>
+
+<Button OnClick="NewReportForm">
+  Fill New Report
+</Button>
+
+
+@code {
+  private void NewReportForm()
+  {
+    NavigationManager.NavigateTo("/report");
+  }
+}
